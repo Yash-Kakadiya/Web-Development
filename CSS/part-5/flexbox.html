@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flexbox.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend>Flexbox Playground</legend>
+      <h1>Flexbox Playground</h1>
+      <fieldset>
+        <legend>Flexbox Direction</legend>
+        <h1>Flexbox Direction</h1>
+        <fieldset>
+          <legend>Direction:-row(default)</legend>
+          <h1>Direction:-row(default)</h1>
+          <div id="row" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Direction:-Row-reverse</legend>
+          <h1>Direction:-Row-reverse</h1>
+          <div id="row-reverse" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Direction:-Column</legend>
+          <h1>Direction:-Column</h1>
+          <div id="column" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Direction:-Column-reverse</legend>
+          <h1>Direction:-Column-reverse</h1>
+          <div id="column-reverse" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Justify Content</legend>
+        <h1>Justify Content</h1>
+        <fieldset>
+          <legend>Flex-Start</legend>
+          <h1>Justify Content :Flex-Start</h1>
+          <div id="justify-content-flex-start" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Flex-End</legend>
+          <h1>Justify Content :Flex-End</h1>
+          <div id="justify-content-flex-end" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Center</legend>
+          <h1>Justify Content :Center</h1>
+          <div id="justify-content-center" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Space-Between</legend>
+          <h1>Justify Content :Space-Between</h1>
+          <div id="justify-content-space-between" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Space-Around</legend>
+          <h1>Justify Content :Space-Around</h1>
+          <div id="justify-content-space-around" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Space-Evenly</legend>
+          <h1>Justify Content :Space-Evenly</h1>
+          <div id="justify-content-space-evenly" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Flex-Wrap</legend>
+        <h1>Flex-Wrap</h1>
+        <fieldset>
+          <legend>No-Wrap</legend>
+          <h1>No-Wrap</h1>
+          <div id="no-wrap" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Wrap</legend>
+          <h1>Wrap</h1>
+          <div id="wrap" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Wrap-Reverse</legend>
+          <h1>Wrap-Reverse</h1>
+          <div id="wrap-reverse" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>Align-Items</legend>
+        <h1>Align-Items</h1>
+        <fieldset>
+          <legend>Flex-Start</legend>
+          <h1>Align-Items:Flex-Start</h1>
+          <div id="align-items-flex-start" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Flex-End</legend>
+          <h1>Align-Items:Flex-End</h1>
+          <div id="align-items-flex-end" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Center</legend>
+          <h1>Align-Items:Center</h1>
+          <div id="align-items-center" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Baseline</legend>
+          <h1>Align-Items:Baseline</h1>
+          <div id="align-items-baseline" class="container">
+            <div style="background-color: violet">violet</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: blue; height: 75px">blue</div>
+            <div style="background-color: green">green</div>
+            <div style="background-color: yellow">yellow</div>
+            <div style="background-color: orange; height: 200px; font-size: 3.5em">orange</div>
+            <div style="background-color: red">red</div>
+          </div>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <fieldset>
+            <legend>Align Content</legend>
+            <h1>Align Content</h1>
+            <fieldset>
+              <legend>Flex-Start</legend>
+              <h1>Align Content:Flex-Start</h1>
+              <div id="align-content-flex-start" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Flex-End</legend>
+              <h1>Align Content:Flex-End</h1>
+              <div id="align-content-flex-end" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Center</legend>
+              <h1>Align Content:Center</h1>
+              <div id="align-content-center" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Space-Between</legend>
+              <h1>Align Content:Space-Between</h1>
+              <div id="align-content-space-between" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Space-Around</legend>
+              <h1>Align Content:Space-Around</h1>
+              <div id="align-content-space-around" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Space-Evenly</legend>
+              <h1>Align Content:Space-Evenly</h1>
+              <div id="align-content-space-evenly" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+            <fieldset>
+                <legend>Baseline</legend>
+                <h1>Align Content:Baseline</h1>
+                <div id="align-content-baseline" class="container">
+                    <div style="background-color: violet">violet</div>
+                    <div style="background-color: indigo">indigo</div>
+                    <div style="background-color: blue; height: 75px">blue</div>
+                    <div style="background-color: green">green</div>
+                    <div style="background-color: yellow">yellow</div>
+                    <div style="background-color: orange; height: 200px; font-size: 3.5em">orange</div>
+                    <div style="background-color: red">red</div>
+                </div>
+              </fieldset>
+          </fieldset>
+          <fieldset>
+            <legend>Align-Self</legend>
+            <h1>Align-Self</h1>
+            <fieldset>
+              <legend>Flex-Start</legend>
+              <h1>Align-Self:Flex-Start</h1>
+              <div id="align-self-flex-start" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange" id="org">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Flex-End</legend>
+              <h1>Align-Self:Flex-End</h1>
+              <div id="align-self-flex-end" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange" id="org">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Center</legend>
+              <h1>Align-Self:Center</h1>
+              <div id="align-self-center" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange" id="org">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Baseline</legend>
+              <h1>Align-Self:Baseline</h1>
+              <div id="align-self-baseline" class="container">
+                <div style="background-color: violet">violet</div>
+                <div style="background-color: indigo">indigo</div>
+                <div style="background-color: blue; height: 75px">blue</div>
+                <div style="background-color: green">green</div>
+                <div style="background-color: yellow">yellow</div>
+                <div style="background-color: orange; height: 200px; font-size: 3.5em" id="org">orange</div>
+                <div style="background-color: red">red</div>
+              </div>
+            </fieldset>
+          </fieldset>
+          <fieldset>
+            <fieldset>
+                <legend>Flex-Sizing</legend>
+                <h1>Flex-Sizing</h1>
+                <fieldset>
+                    <legend>Flex-Basis</legend>
+                    <h1>Flex-Basis</h1>
+                    <div id="flex-sizing-flex-basis" class="container">
+                        <div style="background-color: violet">violet</div>
+                        <div style="background-color: indigo">indigo</div>
+                        <div style="background-color: blue" id="blue">blue</div>
+                        <div style="background-color: green">green</div>
+                        <div style="background-color: yellow">yellow</div>
+                        <div style="background-color: orange" id="org">orange</div>
+                        <div style="background-color: red">red</div>
+                      </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Flex-Grow</legend>
+                    <h1>Flex-Grow</h1>
+                    <div id="flex-sizing-flex-grow" class="container">
+                        <div style="background-color: violet">violet</div>
+                        <div style="background-color: indigo">indigo</div>
+                        <div style="background-color: blue" id="blue">blue</div>
+                        <div style="background-color: green">green</div>
+                        <div style="background-color: yellow">yellow</div>
+                        <div style="background-color: orange" id="org">orange</div>
+                        <div style="background-color: red">red</div>
+                      </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Flex-Shrink</legend>
+                    <h1>Flex-Shrink</h1>
+                    <div id="flex-sizing-flex-shrink" class="container">
+                        <div style="background-color: violet">violet</div>
+                        <div style="background-color: indigo">indigo</div>
+                        <div style="background-color: blue" id="blue">blue</div>
+                        <div style="background-color: green">green</div>
+                        <div style="background-color: yellow">yellow</div>
+                        <div style="background-color: orange" id="org">orange</div>
+                        <div style="background-color: red">red</div>
+                      </div>
+                </fieldset>
+            </fieldset>
+    </fieldset>
+  </body>
+</html>

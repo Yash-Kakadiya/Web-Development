@@ -1,0 +1,10 @@
+div{
+    width: 400px;
+    height: 200px;
+    background-color: yellowgreen;
+    margin: 10px auto;
+    background-image: url(./profile.jpg);
+    /* background-size: auto;
+    background-size: crop; */
+    background-size: contain;
+}

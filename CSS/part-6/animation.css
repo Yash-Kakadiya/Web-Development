@@ -1,0 +1,68 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: green;
+    /* animation-name: ani1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: ani1 2s ease-in-out 0.5s infinite alternate ;
+}
+
+@keyframes ani1{
+    from{
+        font-size: 20px;
+        background-color: green;
+        height: 100px;
+        width: 50px;
+    }
+    to{
+        font-size: 40px;
+        background-color: orange;
+        height: 200px;
+        width: 500px;
+        border-radius: 20px;
+    }
+}
+
+.box2{
+    height: 100px;
+    width: 300px;
+    background-color: green;
+    /* animation-name: ani1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: ani2 2s ease-in-out 0.5s infinite alternate ;
+}
+
+@keyframes ani2{
+    0%{
+        font-size: 20px;
+        background-color: green;
+        height: 100px;
+        width: 50px;
+        box-shadow: 5px 5px 50px aqua;
+    }
+    50%{
+        font-size: 40px;
+        background-color: blue;
+        height: 200px;
+        width: 500px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 100px darkred;
+    }
+    100%{
+        font-size: 80px;
+        background-color: orange;
+        height: 325px;
+        width: 700px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 200px red;
+    }
+
+}

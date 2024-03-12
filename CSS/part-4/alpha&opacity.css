@@ -1,0 +1,11 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 68, 0, 0.3);
+    /* background-color: #ff4400c6; */
+}
+
+#opacity{
+    background-color: gold;
+    opacity: 0.5;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in HTML</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Some Inputs</legend>
+      <form action="/action">
+        <label>
+          Username: <input type="text" placeholder="Enter Username" />
+        </label>
+        <br />
+        <label>
+          Password: <input type="password" placeholder="Enter Password" />
+        </label>
+        <br />
+        Number: <input type="number" /><br />
+        Time: <input type="time" /><br />
+        Color: <input type="color" />
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Classical Approach for lable</legend>
+      <form action="/action">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter Username" />
+        <br />
+        <label for="password">Password: </label>
+        <input type="password" id="password" placeholder="Enter Password" />
+        <hr />
+        <button>Default</button>
+        <button type="button">Simple Button</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <hr />
+        <h3>Buttons using Input</h3>
+        <input type="button" value="Button " />
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Name Attribute</legend>
+      <form action="/action">
+        <label>
+          Username:
+          <input type="text" placeholder="Enter Username" name="username" />
+        </label>
+        <br />
+        <label>
+          Password:
+          <input type="password" placeholder="Enter Password" name="password" />
+        </label>
+        <br />
+        <button>Submit</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Search in Youtube</legend>
+      <form action="https://www.youtube.com/results">
+        <input
+          type="text"
+          name="search_query"
+          placeholder="Search in youtube"
+        />
+        <button>Search</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Checkbox</legend>
+      <form action="/actiom">
+        <h4>Choose your Hobbies</h4>
+        <input type="checkbox" name="hobbies" id="gm" value="Gaming" />
+        <label for="gm">Gaming</label>
+        <br />
+        <input type="checkbox" name="hobbies" id="cd" value="Coding" />
+        <label for="cd">Coding</label>
+        <br />
+        <input type="checkbox" name="hobbies" id="rd" value="Reading" />
+        <label for="rd">Reading</label>
+        <br />
+        <input type="checkbox" name="hobbies" id="sw" value="Swimming" />
+        <label for="sw">Swimming</label>
+        <br />
+        <input type="checkbox" name="hobbies" id="or" value="others" />
+        <label for="or">Others</label>
+        <br />
+        <button>Submit</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Radio Button</legend>
+      <form action="/actiom">
+        <input type="radio" name="Gender" id="m" value="male" />
+        <label for="m">Male</label>
+        <br />
+        <input type="radio" name="Gender" id="f" value="female" />
+        <label for="f">Female</label>
+        <br />
+        <input type="radio" name="Gender" id="o" value="others" />
+        <label for="o">others</label>
+        <br />
+        <button>Submit</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Select element</legend>
+      <form action="/action">
+        <select name="games">
+          <option value="select" selected disabled>Select Game</option>
+          <option value="gta5">GTA 5</option>
+          <option value="poppyplaytime">Poppy Playtime</option>
+          <option value="rdr2">RDR 2</option>
+        </select>
+        <button>Submit</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Range Element</legend>
+      <form action="/action">
+        <label for="volume">Select Volume Level :</label>
+        <input
+          type="range"
+          name="volume"
+          min="0"
+          max="100"
+          step="10"
+          value="70"
+        />
+        <button>Submit</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Textarea</legend>
+      <form action="/action">
+        <label for="feedback">Enter Feedback :</label>
+        <textarea
+          name="feedback"
+          id="feedback"
+          placeholder="Write feedback"
+          cols="30"
+          rows="5"
+        ></textarea>
+        <button>Submit</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Others</legend>
+      <form action="/action">
+        date:<input type="date" required /><br />
+        datetime:<input type="datetime" /><br />
+        datetime-local:<input type="datetime-local" /><br />
+        email:<input type="email" required /><br />
+        file:<input type="file" /><br />
+        hidden:<input type="hidden" /><br />
+        tel:<input type="tel" /><br />
+        url:<input type="url" /><br />
+        month:<input type="month" /><br />
+        week:<input type="week" /><br />
+        image:<input type="image" src="./gta 5 logo.jpg" /><br />
+        <button>Submit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise Qs-9</title>
+  </head>
+  <body>
+    <fieldset>
+      <form action="/action">
+        <h3>Registration Form</h3>
+        <div>
+          <input
+            type="text"
+            name="firstname"
+            id="fnm"
+            placeholder="First Name"
+            pattern="[a-zA-Z]+"
+            autofocus
+            required
+          />
+          <input
+            type="text"
+            name="lastname"
+            id="lnm"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div>
+          Select Gender
+          <select name="gender" id="gen">
+            <option value="male" selected disabled>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div>
+          Do you agree to all terms and conditions ?
+          <input type="checkbox" name="terms" id="tnc" required />
+          <label for="tnc">Yes, I agree</label><br />
+          <button type="submit">Register</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>

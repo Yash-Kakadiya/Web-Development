@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table in HTML</title>
+  </head>
+  <body>
+    <table border="">
+      <caption>
+        Table Title
+      </caption>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+      </tr>
+      <tr>
+        <td>Data 3</td>
+        <td>Data 4</td>
+      </tr>
+    </table>
+
+    <h1>Example</h1>
+    <table border="black">
+      <caption>
+        Food Menu
+      </caption>
+      <!-- Table Header -->
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <!-- Table Body -->
+      <tbody>
+        <tr>
+          <td>Thumbs Up</td>
+          <td>₹20</td>
+        </tr>
+        <tr>
+          <td>Samosa</td>
+          <td>₹40</td>
+        </tr>
+        <tr>
+          <td>French Fries</td>
+          <td>₹80</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>₹140</td>
+          </tr>
+      </tfoot>
+    </table>
+
+    <h1>Colspan & Rowspan Attributes</h1>
+    <table border="black">
+        <caption>
+          Food Menu
+        </caption>
+        <!-- Table Header -->
+        <thead>
+          <tr>
+            <th rowspan="2">Item</th>
+            <th colspan="2">Price</th>
+          </tr>
+          <tr>
+            <th>INR</th>
+            <th>USD</th>
+          </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+          <tr>
+            <td>Thumbs Up</td>
+            <td>₹20</td>
+            <td>$0.24</td>
+          </tr>
+          <tr>
+            <td>Samosa</td>
+            <td>₹40</td>
+            <td>$0.48</td>
+          </tr>
+          <tr>
+            <td>French Fries</td>
+            <td>₹80</td>
+            <td>$0.97</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+              <td>Total</td>
+              <td>₹140</td>
+              <td>$1.69</td>
+            </tr>
+        </tfoot>
+      </table>
+  </body>
+</html>

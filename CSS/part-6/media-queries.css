@@ -1,0 +1,32 @@
+.demo{
+    background-color: yellow;
+    border: 2px solid black;
+}
+@media (width: 400px) {
+    .demo{
+        background-color: red;
+        color: white;
+    }
+}
+
+@media (min-width:700px){
+    .demo{
+    background-color: aqua;
+    }
+}
+
+@media (max-width:200px){
+    .demo{
+        background-color: lime;
+    }
+}
+@media((min-width:500px) and (max-width:600px)){
+    .demo{
+        background-color: magenta;
+    }
+}
+@media (orientation: landscape){
+    .demo{
+        background-color: maroon;
+    }
+}
