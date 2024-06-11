@@ -219,3 +219,37 @@
     });
 
 }
+
+{ //Event bubbling
+    let a = document.querySelector(".a");
+    let b = document.querySelector(".b");
+    let c = document.querySelector(".c");
+
+    a.addEventListener("click", function () {
+        console.log("a clicked");
+    });
+
+    b.addEventListener("click", function () {
+        console.log("b clicked");
+    });
+
+    c.addEventListener("click", function () {
+        console.log("c clicked");
+    });
+}
+
+{ //Event delegation -> event for new child element -> target is used in parent element
+    let x = document.querySelector(".x");
+    let y = document.querySelector(".y");
+    let z = document.querySelector(".z");
+
+    x.addEventListener("click", function () {
+        console.log("x clicked");
+    });
+
+    y.addEventListener("click", function () {
+        if (event.target.classList.contains('z')) {
+            alert(event.target.textContent + ' clicked!');
+        }
+    });
+}

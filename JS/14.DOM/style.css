@@ -26,3 +26,19 @@ body {
 #description {
   background-color: antiquewhite;
 }
+
+.a, .x{
+  height: 500px;
+  width: 500px;
+  border: 10px solid black;
+}
+.b, .y{
+  height: 300px;
+  width: 300px;
+  border: 5px solid blue;
+}
+.c, .z{
+  height: 150px;
+  width: 150px;
+  border: 2px solid red;
+}
