@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to words</title>
+</head>
+
+<body>
+    <h1>Write an HTML file with JavaScript that finds position of first occurrence of vowel “ a ”, last occurrence of vowel “ a ” in a given word and returns the string between them. For example,  then script would return first occurrence of “ a ”- that is position 1 and last occurrence- 6 and  them is “ jant ”.</h1>
+
+    <script>
+        //Number to words
+
+        let str = prompt("Enter string with two 'a' :");
+        let str2;
+
+        let fidx = str.indexOf('a');
+        let lidx = str.lastIndexOf('a');
+
+        if (fidx == -1 || lidx == -1) {
+            alert("'a' is not found in given string !");
+        } else if (fidx == lidx) {
+            alert("only one 'a' is found in given string !");
+        } else {
+            str2 = str.substring(fidx + 1, lidx);
+        }
+
+        document.write("Given string : " + str + "<br>");
+        document.write("First occurrence of 'a' is at position : " + (fidx+1) + "<br>");
+        document.write("Last occurrence of 'a' is at position : " + (lidx+1) + "<br>");
+        document.write("String between them :" + str2);
+
+    </script>
+</body>
+
+</html>
