@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form action="" onsubmit="return false;">
+            <div class="screen">
+                <input type="text" name="ans" id="txt" value="0">
+            </div>
+            <div class="inputs">
+                <div class="btns">
+                    <div class="row">
+                        <button class="sg" id="mod" onclick="ans.value+='%'">%</button>
+                        <button class="sg" id="clr" onclick="ans.value='0'">AC</button>
+                        <button class="sg" id="clr2" onclick="ans.value='0'">C</button>
+                        <button class="sg" id="div" onclick="ans.value+='/'">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="sg" id="7"  onclick="ans.value+='7'">7</button>
+                        <button class="sg" id="8" onclick="ans.value+='8'">8</button>
+                        <button class="sg" id="9" onclick="ans.value+='9'">9</button>
+                        <button class="sg" id="mul" onclick="ans.value+='*'">X</button>
+                    </div>
+                    <div class="row">
+                        <button class="sg" id="4" onclick="ans.value+='4'">4</button>
+                        <button class="sg" id="5" onclick="ans.value+='5'">5</button>
+                        <button class="sg" id="6" onclick="ans.value+='6'">6</button>
+                        <button class="sg" id="sub" onclick="ans.value+='-'">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="sg" id="1" onclick="ans.value+='1'">1</button>
+                        <button class="sg" id="2" onclick="ans.value+='2'">2</button>
+                        <button class="sg" id="3" onclick="ans.value+='3'">3</button>
+                        <button class="sg" id="add" onclick="ans.value+='+'">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="sg" id="00" onclick="ans.value+='00'">00</button>
+                        <button class="sg" id="0" onclick="ans.value+='0'">0</button>
+                        <button class="sg" id="." onclick="ans.value+='.'">.</button>
+                        <button class="sg" id="eql" onclick="ans.value=eval(ans.value)">=</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
