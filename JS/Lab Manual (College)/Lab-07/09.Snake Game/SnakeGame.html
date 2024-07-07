@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #snake {
+            position: absolute;
+            transform: rotateY(180deg);
+            height: 75px;
+            width: 150px;
+        }
+
+        #food {
+            position: relative;
+            width: 75px;
+        }
+
+        .playground {
+            position: absolute;
+            left: 0;
+            width: 100vw;
+            height: 90vh;
+            background-color: gray;
+            border: 3px solid red;
+        }
+
+        #score {
+            background-color: aqua;
+            border: 1px solid green;
+            padding: 2.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="go1Left()">Left</button>
+    <button onclick="go1Right()">Right</button>
+    <button onclick="go1Up()">Up</button>
+    <button onclick="go1Down()">Down</button>
+    <button onclick="pause()">Pause</button>
+    <span id="score"><b>Score : 0</b></span>
+    <hr>
+    <div class="playground">
+        <img src="./snake.jpg" alt="" id="snake" type="">
+        <img src="./football.jpeg" alt="" id="food" type="button">
+    </div>
+
+    <script>
+
+        let leftId;
+        let rightId;
+        let upId;
+        let downId;
+        let left = 0;
+        let up = 0;
+        let lfood;
+        let tfood;
+        let score = 0;
+
+        move();
+        function move() {
+            lfood = parseInt(Math.random() * (screen.availWidth - 300)) + "px";
+            tfood = parseInt(Math.random() * (screen.availHeight - 300)) + "px";
+            document.getElementById('food').style.left = lfood;
+            document.getElementById('food').style.top = tfood;
+        }
+
+
+        function check() {
+            if ((left + 150 >= parseInt(lfood) && left <= parseInt(lfood) + 75) &&
+                (up + 75 >= parseInt(tfood) && up <= parseInt(tfood) + 75)) {
+                document.getElementById('score').innerHTML = "<b>Score : " + (++score) + "</b>";
+                move();
+            }
+        }
+
+        function pause() {
+            clearInterval(leftId);
+            clearInterval(rightId);
+            clearInterval(upId);
+            clearInterval(downId);
+        }
+
+        function clearOtherIntervals(a, b, c) {
+            clearInterval(a);
+            clearInterval(b);
+            clearInterval(c);
+        }
+
+        function go1Left() {
+            clearOtherIntervals(rightId, downId, upId);
+            leftId = setInterval(goLeft, 7);
+        }
+
+        function go1Right() {
+            clearOtherIntervals(leftId, downId, upId);
+            rightId = setInterval(goRight, 7);
+        }
+
+        function go1Down() {
+            clearOtherIntervals(rightId, leftId, upId);
+            downId = setInterval(goDown, 7);
+        }
+
+        function go1Up() {
+            clearOtherIntervals(rightId, downId, leftId);
+            upId = setInterval(goUp, 7);
+        }
+
+
+        function goLeft() {
+            left--;
+            if (left < 0) {
+                left = screen.availWidth - 20;
+            }
+            document.getElementById('snake').style.left = left + "px";
+            check();
+        }
+
+        function goRight() {
+            left++;
+            if (left + 150 > screen.availWidth - 20) {
+                left = -150;
+            }
+            document.getElementById('snake').style.left = left + "px";
+            check();
+        }
+
+        function goUp() {
+            up--;
+            if (up - 5 < 0) {
+                up = screen.availHeight - 200;
+            }
+            document.getElementById('snake').style.top = up + "px";
+            check();
+        }
+
+        function goDown() {
+            up++;
+            if (up + 75 > screen.availHeight - 200) {
+                up = 0;
+            }
+            document.getElementById('snake').style.top = up + "px";
+            check();
+        }
+
+    </script>
+</body>
+
+</html>
