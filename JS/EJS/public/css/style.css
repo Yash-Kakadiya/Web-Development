@@ -1,0 +1,13 @@
+body {
+    background-color: orange;
+}
+
+img {
+    height: 150px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.footer{
+    background-color: aqua;
+}
