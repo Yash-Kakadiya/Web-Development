@@ -703,7 +703,8 @@ const sampleListings = [
         title: "Clifftop Mansion",
         description: "A grand mansion set on a cliff with sweeping views of the ocean.",
         image: {
-            filename: "https://plus.unsplash.com/premium_photo-1697730152499-dfb766ea949d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2xpZmZ0b3AlMjBNYW5zaW9ufGVufDB8MHwwfHx8MA%3D%3D"
+            filename: "listingimage",
+            url: "https://plus.unsplash.com/premium_photo-1697730152499-dfb766ea949d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2xpZmZ0b3AlMjBNYW5zaW9ufGVufDB8MHwwfHx8MA%3D%3D"
         },
         price: 5000,
         location: "Big Sur",

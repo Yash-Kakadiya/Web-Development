@@ -9,7 +9,10 @@ async function initDB() {
     console.log("data initialized");
 };
 
-mongoose.connect('mongodb+srv://yashkakadiya931:yashkakadiya931@cluster0.welde.mongodb.net/staybee')
+require('dotenv').config({ path: '../.env' });
+const mongoURL = process.env.mongoURL;
+
+mongoose.connect(mongoURL)
     .then(() => {
         console.log('Connected to MongoDB');
         initDB();

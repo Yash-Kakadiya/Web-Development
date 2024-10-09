@@ -4,6 +4,7 @@ const ListingRoutes = require('./routes/ListingsRoutes.js')
 const cors = require('cors');
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -11,11 +12,10 @@ app.use('/staybee', ListingRoutes);
 
 
 require('dotenv').config();
-
 const port = process.env.port || 3001;
-const mongoURl = process.env.mongoURl;
+const mongoURL = process.env.mongoURL;
 
-mongoose.connect(mongoURl)
+mongoose.connect(mongoURL)
     .then(() => {
         console.log('Connected to MongoDB');
 
