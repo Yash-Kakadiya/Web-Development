@@ -38,7 +38,7 @@ console.log(fruits);
 console.log(fruits.indexOf("Chikoo"));
 console.log(fruits.includes("Apple"));
 
-fruits.concat(friends);   //doesn't change the original array
+console.log(fruits.concat(friends)); //doesn't change the original array
 console.log(fruits);
 
 fruits.reverse();
