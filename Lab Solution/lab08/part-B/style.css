@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url(https://img.freepik.com/free-vector/geometry-education-blue-background-vector-frame-disruptive-education-digital-remix_53876-114094.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contentUp {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/171/106/non_2x/abstract-white-and-orange-corporate-background-free-vector.jpg);
+    width: 92%;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.contentDown {
+    height: 305px;
+    background-color: rgb(255, 246, 254);
+    position: absolute;
+    top: 370px;
+    left: 50px;
+    width: 92%;
+    margin-top: 0px;
+}
+
+.logo {
+    border: rgb(251, 106, 54) solid 1px;
+    width: 30PX;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 25px;
+    color: black;
+    float: left;
+    margin-right: 350px;
+}
+
+.text {
+    margin: 10px;
+    float: left;
+}
+
+.searchtext {
+    background-color: orangered;
+    height: 21px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    width: 50px;
+    float: left;
+    margin-top: 10px;
+    border: none;
+}
+
+.hirebtn {
+    background-color: orangered;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.box1 {
+    height: 155px;
+    width: 130px;
+    background-color: rgb(211, 242, 249);
+    position: absolute;
+    left: 550px;
+    top: 135px;
+    border-radius: 5px;
+}
+
+.box2 {
+    height: 155px;
+    width: 130px;
+    background-color: rgb(211, 242, 249);
+    position: absolute;
+    left: 750px;
+    top: 135px;
+    border-radius: 5px;
+}
+
+.box3 {
+    height: 155px;
+    width: 130px;
+    background-color: rgb(211, 242, 249);
+    position: absolute;
+    left: 950px;
+    top: 135px;
+    border-radius: 5px;
+}
+
+.bulbimg {
+    position: relative;
+    left: 3px;
+    top: 40px;
+}
+
+.box1:hover {
+    background-color: black;
+    color: white;
+}
+
+.box2:hover {
+    background-color: black;
+    color: white;
+}
+
+.box3:hover {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+    height: 50px;
+    background-color: rgb(174, 116, 228);
+}
+
+.a {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding: 4px 3px;
+    margin: 15px 0 0 25px;
+    border-radius: 50%;
+    float: left;
+}
+
+.aleatexthead {
+    float: left;
+    color: white;
+    position: relative;
+    left: 3px;
+    bottom: 17px;
+    font-size: 23px;
+
+}
+
+.statustext1 {
+    margin-left: 45px;
+    float: right;
+    margin-right: 90px;
+    color: white;
+    font-weight: 600;
+    margin-top: 8px;
+    border-radius: 18px;
+    height: 33px;
+    background-color: rgb(174, 116, 228);
+    text-align: center;
+    width: 105px;
+}
+
+.statustext {
+    margin-left: 45px;
+    float: right;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(174, 116, 228);
+    text-align: center;
+    width: 105px;
+    margin-top: 8px;
+    border-radius: 18px;
+    height: 33px;
+
+}
+
+.statusbartext {
+    position: relative;
+    top: 8px;
+}
+
+.alea {
+    height: 390px;
+}
+
+.connect {
+    background-color: rgb(0, 40, 61);
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aleatext1 {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 415px;
+    margin-bottom: 0px;
+}
+
+.aleatext2 {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 2px;
+    margin-left: 459px;
+}
+
+.highlight {
+    color: blueviolet;
+}
+
+.ui {
+    height: 50px;
+    width: 180px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 2px 3px 25px black;
+    margin-left: 380px;
+    z-index: -1;
+}
+
+.uitext {
+    font-size: 18px;
+}
+
+#yeartext {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.aleaimg {
+    height: 305px;
+    width: 186px;
+    margin-top: -86px;
+    margin-left: 590px;
+    background-color: rgb(174, 116, 228);
+    border-radius: 200px;
+    z-index: 2;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/hd/d95c1f148207527.62d1246c25004.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 1px 1px 80px rgb(49, 49, 49),
+        inset -1px -1px 80px rgb(69, 69, 69);
+}
+
+.net {
+    margin-top: -286px;
+    margin-left: 656px;
+    position: absolute;
+    z-index: 1;
+}
+
+.web {
+    height: 50px;
+    width: 180px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 2px 3px 25px black;
+    margin-left: 840px;
+    margin-top: -59px;
+}
+
+.img1 {
+    float: left;
+    margin-left: 160px;
+    margin-top: 1px;
+    display: inline;
+}
+
+.img2 {
+    height: 70px;
+    width: 150px;
+    margin: 10px;
+    margin-top: 1px;
+    display: inline;
+}
+
+.img3 {
+    height: 70px;
+    width: 150px;
+    margin: 10px;
+    margin-top: -17px;
+    display: inline;
+}
+
+.about {
+    height: 310px;
+    background-color: rgb(174, 116, 228);
+}
+
+.abouttext {
+    color: white;
+    font-size: 65px;
+    font-weight: 600;
+    float: left;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+
+.paratext {
+    float: right;
+    color: white;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 13px;
+    margin-right: 40px;
+    word-spacing: 4px;
+    font-weight: 100;
+}
+
+.box1 {
+    float: left;
+    height: 80px;
+    width: 80px;
+    border-radius: 17px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 18px;
+    font-weight: 600;
+    margin-left: -140px;
+    margin-top: 180px;
+    background: blueviolet;
+    box-shadow: 0 8px 8px -4px rgb(5, 5, 5);
+}
+
+.box1text {
+    font-size: 22px;
+    color: white;
+    float: left;
+    font-weight: 600;
+    margin-top: 197px;
+    margin-left: -40px;
+}
+
+.box2text,
+.box3text {
+    font-size: 22px;
+    color: white;
+    float: left;
+    font-weight: 600;
+    margin-top: 197px;
+    margin-left: 8px;
+}
+
+.box2,
+.box3 {
+    float: left;
+    height: 80px;
+    width: 80px;
+    border-radius: 17px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 18px;
+    font-weight: 600;
+    margin-left: 200px;
+    margin-top: 180px;
+    background: blueviolet;
+    box-shadow: 0 8px 8px -4px rgb(5, 5, 5);
+}
+
+.box3 {
+    margin-left: 348px;
+    margin-top: 14px;
+}
+
+.box3text {
+    margin-top: 29px;
+}
+
+.statustext1:hover {
+    background: blueviolet;
+    box-shadow: 2px 3px 25px black;
+}
+
+.statustext:hover {
+    background: blueviolet;
+    box-shadow: 2px 3px 3px black;
+
+}

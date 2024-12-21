@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-04</title>
+    <style>
+        .txtClr {
+            font-weight: 700;
+            color: rgb(28, 186, 147);
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Part-A</legend>
+        <fieldset align="center">
+            <form>
+                <h1 align="center">Student Registration</h1>
+                <table cellspacing="30" align="center">
+                    <tr>
+                        <td>FullName</td>
+                        <td><input type="text" name="nm" placeholder="Enter Full Name" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>E-Mail</td>
+                        <td><input type="email" name="em" placeholder="Enter Email" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No.:</td>
+                        <td><input type="text" name="no" placeholder="Enter Mobile Number" size="30"
+                                pattern="[0-9]{10}">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea rows="4" cols="30" placeholder="Enter Address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td><input type="text" name="nation" placeholder="Enter Nationality" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><input type="Date" name="dt"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio" name="gen" id="m"><label for="m">Male</label>
+                            <input type="radio" name="gen" id="fm"><label for="fm">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Highest Degree </td>
+                        <td><select value="Enter Degree">
+                                <option value="Enter Degree" selected disabled="">Enter Degree</option>
+                                <option value="B.Tech">B.tech</option>
+                                <option value="BCA">BCA</option>
+                                <option value="BBA">BBA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CPI</td>
+                        <td><input type="text" name="cpi" placeholder="Enter Your CPI"></td>
+                    </tr>
+                    <tr>
+                        <td>Passing Year</td>
+                        <td><select value="Passing Year">
+                                <option value="Passing Year" selected disabled="">Passing Year</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            <input type="submit" name="sub" value="Click Here">
+                            <input type="reset" name="rst" value="Cancel">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <hr>
+        <fieldset align="center">
+            <form>
+                <h1 align="center">COVID-19 Vaccine Registration Form</h1>
+                <table cellspacing="30" align="center">
+                    <tr>
+                        <td>FirstName</td>
+                        <td><input type="text" name="fnm" placeholder="Enter First Name" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>LastName</td>
+                        <td><input type="text" name="lnm" placeholder="Enter Last Name" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Aadhar Number:</td>
+                        <td><input type="text" name="no" placeholder="Enter Aadhar Number" size="30"
+                                pattern="[0-9]{12}">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Vaccine Name </td>
+                        <td><select value="Please Select Vaccine Name">
+                                <option value="Please Select Vaccine Name" selected disabled>Please Select Vaccine Name
+                                </option>
+                                <option value="CoWin">CoWin</option>
+                                <option value="CoVaccine">CoVaccine</option>
+                                <option value="Cowin3.0">Cowin 3.0</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Vaccination Center Name</td>
+                        <td><select value="Please Select Vaccine Center Name">
+                                <option value="Please Select Vaccine Center Name" selected disabled="">Please Select
+                                    Vaccine
+                                    Center Name</option>
+                                <option value="Rajkot">Rajkot</option>
+                                <option value="Baroda">Baroda</option>
+                                <option value="Surat">Surat</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Dose</td>
+                        <td><input type="Date" name="dt"></td>
+                    </tr>
+                    <tr>
+                        <td>Dose Number</td>
+                        <td><input type="text" name="dsnm" pattern="[0-3]{1}" placeholder="Enter Dose Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="sub" value="Click Here">
+                            <input type="reset" name="rst" value="Cancel">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>Part-B</legend>
+        <form>
+            <h1 align="center">Employee Registration</h1>
+            <table cellspacing="30" align="center">
+                <caption>
+                    <h3>Personal Information</h3>
+                </caption>
+                <tr>
+                    <td>Employee Id : </td>
+                    <td><input type="text" placeholder="Enter Employee Id" name="name"></td>
+                    <td>Employee Name : </td>
+                    <td><input type="text" placeholder="Enter Employee Id" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="email" placeholder="Enter Email" name="name"></td>
+                    <td>Contact Number : </td>
+                    <td><input type="Number" placeholder="Enter Contact No" name="name" pattern="[0-9]{10}"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Marital Status :
+                    </td>
+                    <td>
+                        <label for="s">Single</label>
+                        <input type="radio" name="married" id="s">
+
+                        <label for="ma">Married</label>
+                        <input type="radio" name="married" id="ma">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="4">
+                        <h3>Education Qualification</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Education : </td>
+                    <td><input type="text" placeholder="Enter Education Details" name="name"></td>
+                    <td>Experience : </td>
+                    <td><input type="text" placeholder="Enter Experience Details" name="name"></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="4">
+                        <h3>Job Details</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Designation : </td>
+                    <td><input type="text" placeholder="Enter Designation Details" name="name"></td>
+                    <td>Job location : </td>
+                    <td><input type="text" placeholder="Enter Job Location" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Salary</td>
+                    <td><input type="text" placeholder="Enter Salary Details" name="name"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">
+                        <input type="Submit" name="CLICK HERE" value="Register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <hr>
+    <fieldset style="background-color: rgb(86, 128, 145);">
+        <legend>Part-C</legend>
+        <form>
+            <div style="background-color: aqua; width:40%; margin: auto;padding: 5px; border-radius: 10px;">
+                <table align=" center" cellspacing="10px">
+                    <h1 align="center">Create Account</h1>
+                    <hr>
+                    <tr>
+                        <td class="txtClr">First Name*</td>
+                        <td class="txtClr">Last Name*</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="First Name" placeholder="Enter Your First Name" required></td>
+                        <td><input type="text" name="Last Name" placeholder="Enter Your Last Name" required></td>
+                    </tr>
+
+                    <tr>
+                        <td class="txtClr">Email*</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="Email" placeholder="Enter Your Email" aria-colspan="10" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txtClr">Password*</td>
+                        <td class="txtClr">Confirm Password*</td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="password" placeholder="Enter Your Password" required></td>
+                        <td><input type="password" name="Confirm password" placeholder="Confirm Your Password" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txtClr">Gender:</td>
+                        <td class="txtClr">Hobbies</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="Gender" value="Male" id="male" required>
+                            <label for="male">Male</label>
+
+                            <input type="radio" name="Gender" value="Female" id="female">
+                            <label for="female">Female</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hb" value="Music">Music
+                            <input type="checkbox" name="hb" value="Sports">Sports
+                            <input type="checkbox" name="hb" value="Travel">Travel
+                            <input type="checkbox" name="hb" value="Movies">Movies
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="txtClr">Source Of Income</td>
+                        <td class="txtClr">Income</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="soi" id="" required>
+                                <option value="Source of income" selected disabled>Source of income</option>
+                                <option value="employee">Employee</option>
+                                <option value="business">Business</option>
+                            </select>
+                        </td>
+                        <td><input type="range" name="range" step="1" min="0" max="20"> <button
+                                style="background-color: rgb(28, 186, 147);color: white;">20K</button></td>
+                    </tr>
+                    <tr>
+                        <td class="txtClr">Upload Profile Picture</td>
+                        <td class="txtClr">Age</td>
+                    </tr>
+                    <tr>
+                        <td><input type="file" name="Choose File" placeholder="No file chosen" required></td>
+                        <td><input type="text" pattern="[0-9]{2}" name="Age" required></td>
+                    </tr>
+                    <tr>
+                        <td class="txtClr">Bio</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea name="Bio" cols="60" rows="5"></textarea></td>
+                    </tr>
+                    <td align="right"><input type="submit" name="Submit" value="Create"
+                            style="background-color: rgb(28, 186, 147);color: white;"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

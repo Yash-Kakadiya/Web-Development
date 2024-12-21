@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+.row1 {
+    width: 100%;
+    height: 120px;
+    float: left;
+}
+
+.logo {
+    height: 120px;
+    width: 300px;
+    float: left;
+}
+
+.rightr1 {
+    float: right;
+    margin: 35px;
+}
+
+.elementr1 {
+    margin: 8px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.row2 {
+    width: 100%;
+    height: 600px;
+    float: left;
+    background-image: url("https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    float: right;
+    height: 120px;
+    margin: 30px;
+}
+
+.t1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.t2 {
+    font-size: 18px;
+}
+
+.row3 {
+    width: 100%;
+    height: 205px;
+    padding: 10px;
+    float: left;
+}
+
+.box {
+    width: 24%;
+    height: 180px;
+    border: 2px solid red;
+    float: left;
+    margin-left: 12px;
+    text-align: center;
+    font-size: 18px;
+}

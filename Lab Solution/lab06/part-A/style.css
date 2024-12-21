@@ -1,0 +1,66 @@
+.page {
+	background-color: skyblue;
+	height: 520px;
+	position: relative;
+}
+
+.header {
+	background-color: purple;
+	height: 450px;
+	margin: 20px;
+	color: white;
+}
+
+.content {
+	background-color: orange;
+	height: 400px;
+	color: black;
+}
+
+.sidebar {
+	background-color: black;
+	color: white;
+	height: 80px;
+	width: 400px;
+	margin: 5px 20px 0 10px;
+	float: right;
+}
+
+.entry-control {
+	width: 60%;
+	height: 80px;
+	float: left;
+}
+
+.entry {
+	background-color: black;
+	color: white;
+	height: 20px;
+	width: 100%;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+
+.du {
+	background-color: blue;
+	height: 30px;
+}
+
+@media (max-width:1190px) {
+
+	.sidebar {
+		float: left;
+		width: 60%;
+	}
+}
+
+@media (max-width:500px) {
+
+	.sidebar {
+		width: 90%;
+	}
+
+	.entry-control {
+		width: 90%;
+	}
+}
