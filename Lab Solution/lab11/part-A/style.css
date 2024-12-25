@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(3, 0, 87) !important;
+    margin: 80px;
+}
+
+.a1,
+.a2 {
+    height: 300px;
+    width: 40%;
+}
+
+.a1 {
+    float: left;
+    background-image: linear-gradient(to bottom, rgb(235, 66, 9), yellow);
+}
+
+.a2 {
+    float: right;
+    background-image: radial-gradient(rgb(235, 66, 9), yellow, green);
+}

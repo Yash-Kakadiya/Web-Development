@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(3, 0, 87) !important;
+    margin: 80px;
+}
+
+.row {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    height: 200px;
+    width: 33%;
+    margin: 60px;
+    border-radius: 10px;
+}
